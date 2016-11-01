@@ -32,6 +32,7 @@ Route::get('/admin/category/destroy/{id}', 'CategoryController@destroy');
 Route::get('/admin/post', 'PostController@show');
 Route::get('/admin/post/show', 'PostController@show');
 Route::post('/admin/post/add', 'PostController@create');
+Route::post('/admin/post/store', 'PostController@store');
 
 
 

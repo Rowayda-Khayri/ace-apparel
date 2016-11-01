@@ -43,7 +43,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = new Post;
+        
+        $post->title = $request->postTitle;
+        $post->category_id = 2;
+        $post->body = $request->postBody;
+        $post->author = $request->postAuthor;
+
+        $post->save();
+        
+        return redirect('/admin/post/show');
     }
 
     /**
