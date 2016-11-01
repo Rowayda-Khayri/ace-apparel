@@ -38,7 +38,7 @@
                 </td>
                 
                 <td>
-                    <a href="/category/destroy/{{$category->id}}">Delete</a>
+                    <a href="/admin/category/destroy/{{$category->id}}">Delete</a>
                     <!--<input  type="submit" name="delete" value="Delete" class="btn btn-primary" />-->
                     <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                 </td>

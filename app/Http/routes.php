@@ -26,6 +26,7 @@ Route::post('/admin/category/store', 'CategoryController@store');
 Route::get('/admin/category/show', 'CategoryController@show');
 Route::get('/admin/category/edit/{id}', 'CategoryController@edit');
 Route::post('/admin/category/update/{id}', 'CategoryController@update');
+Route::get('/admin/category/destroy/{id}', 'CategoryController@destroy');
 
 
 
