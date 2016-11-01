@@ -19,7 +19,7 @@ Route::get('/admin', function () {
     return view('adminLayout');
 });
 
-
+Route::get('/admin/category', 'CategoryController@show');
 Route::get('/admin/category/add', 'CategoryController@create');
 Route::post('/admin/category/add', 'CategoryController@create');
 Route::post('/admin/category/store', 'CategoryController@store');
@@ -29,6 +29,9 @@ Route::post('/admin/category/update/{id}', 'CategoryController@update');
 Route::get('/admin/category/destroy/{id}', 'CategoryController@destroy');
 
 
+Route::get('/admin/post', 'PostController@show');
+Route::get('/admin/post/show', 'PostController@show');
+Route::post('/admin/post/add', 'PostController@create');
 
 
 

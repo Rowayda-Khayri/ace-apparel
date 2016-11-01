@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Post;
+use App\Category;
+
+use DateTime;
+
 class PostController extends Controller
 {
     /**
@@ -25,7 +30,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $categories= Category::all();
+        
+        return view('admin.post.add', compact('categories'));
     }
 
     /**
@@ -45,9 +52,12 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $posts= Post::all();
+        
+        return view('admin.post.show', compact('posts'));
+//        return "show posts";
     }
 
     /**

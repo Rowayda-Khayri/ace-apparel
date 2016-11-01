@@ -19,7 +19,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+//        return redirect('/admin/category/show');
     }
 
     /**

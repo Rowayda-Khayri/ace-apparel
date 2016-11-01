@@ -60,7 +60,7 @@
                         <a href="/admin/category/show" style="font-size: 17px;">Blog Categories</a>
                     </li>
                     <li>
-                        <a href="" style="font-size: 17px;">Blog Posts</a>
+                        <a href="/admin/post/show" style="font-size: 17px;">Blog Posts</a>
                     </li>
                     <li>
                         <a href="" style="font-size: 17px;">Authors</a>
