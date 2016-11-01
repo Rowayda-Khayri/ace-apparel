@@ -264,6 +264,7 @@ class ComposerStaticInitbd9a385a9b82e103c539fce0d8317c0d
     );
 
     public static $classMap = array (
+        'AddAuthorColumnInPostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_171516_add_author_column_in_posts_table.php',
         'AddAuthorIdToPostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_085154_add_author_id_to_posts_table.php',
         'CreateAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_083407_create_authors_table.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_081134_create_categories_table.php',
@@ -278,6 +279,7 @@ class ComposerStaticInitbd9a385a9b82e103c539fce0d8317c0d
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'DropAuthorIdColumnAndAddAuthorColumnInTablePosts' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_143039_drop_author_id_column_and_add_author_column_in_table_posts.php',
         'DropAuthorIdInPostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_145444_drop_author_id_in_posts_table.php',
+        'DropTestColumnInPostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_01_171912_drop_test_column_in_posts_table.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',

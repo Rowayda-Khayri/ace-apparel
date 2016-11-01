@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddAuthorColumnInPostsTable' => $baseDir . '/database/migrations/2016_11_01_171516_add_author_column_in_posts_table.php',
     'AddAuthorIdToPostsTable' => $baseDir . '/database/migrations/2016_11_01_085154_add_author_id_to_posts_table.php',
     'CreateAuthorsTable' => $baseDir . '/database/migrations/2016_11_01_083407_create_authors_table.php',
     'CreateCategoriesTable' => $baseDir . '/database/migrations/2016_11_01_081134_create_categories_table.php',
@@ -20,6 +21,7 @@ return array(
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'DropAuthorIdColumnAndAddAuthorColumnInTablePosts' => $baseDir . '/database/migrations/2016_11_01_143039_drop_author_id_column_and_add_author_column_in_table_posts.php',
     'DropAuthorIdInPostsTable' => $baseDir . '/database/migrations/2016_11_01_145444_drop_author_id_in_posts_table.php',
+    'DropTestColumnInPostsTable' => $baseDir . '/database/migrations/2016_11_01_171912_drop_test_column_in_posts_table.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
