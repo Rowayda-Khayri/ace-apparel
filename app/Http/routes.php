@@ -24,7 +24,13 @@ Route::get('/admin/category/add', 'CategoryController@create');
 Route::post('/admin/category/add', 'CategoryController@create');
 Route::post('/admin/category/store', 'CategoryController@store');
 Route::get('/admin/category/show', 'CategoryController@show');
-//Route::post('/admin/category/show', 'CategoryController@show');
+Route::get('/admin/category/edit/{id}', 'CategoryController@edit');
+Route::post('/admin/category/update/{id}', 'CategoryController@update');
+
+
+
+
+
 
 
 

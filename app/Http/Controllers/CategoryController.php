@@ -8,6 +8,8 @@ use App\Http\Requests;
 
 use App\Category;
 
+use DateTime;
+
 class CategoryController extends Controller
 {
     /**
@@ -68,8 +70,12 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
-    }
+        $category= Category::find($id);
+        
+
+        return view('admin.category.edit', compact('category'));
+//        return "edit"
+;    }
 
     /**
      * Update the specified resource in storage.
@@ -80,7 +86,16 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+//        return "update";
+        
+        $category= Category::find($id);
+        
+        $category->name = $request->categoryName;
+        $category->updated_at = new DateTime;
+        $category->save();
+        
+
+        return redirect('/admin/category/show');
     }
 
     /**

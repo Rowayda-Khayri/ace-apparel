@@ -33,7 +33,7 @@
                 
                 
                 <td> 
-                    <a href="/category/edit/{{$category->id}}">Edit</a>
+                    <a href="/admin/category/edit/{{$category->id}}">Edit</a>
                     <!--<input  type="submit" name="edit{{$category->id}}" value="Edit" class="btn btn-primary"/>-->
                 </td>
                 
