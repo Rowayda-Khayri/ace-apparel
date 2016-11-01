@@ -86,7 +86,7 @@
         <div class="row">
             <div  class="col-lg-12" style="margin-top: 100px;">
                 
-                @yield('pageContent')
+                @yield('adminPageContent')
                 
                
                 

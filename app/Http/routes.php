@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/admin', function () {
     return view('adminLayout');
 });
+
+
+
+//Route::get('/admin/category/add', function () {
+//    return view('/admin/category/add');
+//});
+
+Route::get('/admin/category/add', 'CategoryController@add');
+
