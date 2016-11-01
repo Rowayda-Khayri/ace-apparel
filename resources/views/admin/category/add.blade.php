@@ -3,9 +3,12 @@
 
 @section('adminPageContent')
 
-<h1> Add Category </h1>
+<h1> Add Blog Category </h1>
 
-<form method="POST" action="/category/store">
+</br>
+
+
+<form method="POST" action="/admin/category/store">
     
     <label>Category Name :</label>
     <input  type="text" name="categoryName" value="" required>

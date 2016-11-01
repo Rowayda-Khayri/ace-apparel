@@ -57,7 +57,7 @@
                     
                     
                     <li>
-                        <a href="" style="font-size: 17px;">Blog Categories</a>
+                        <a href="/admin/category/show" style="font-size: 17px;">Blog Categories</a>
                     </li>
                     <li>
                         <a href="" style="font-size: 17px;">Blog Posts</a>
@@ -89,8 +89,6 @@
                 @yield('adminPageContent')
                 
                
-                
-                
             </div>
         </div>
     </div>

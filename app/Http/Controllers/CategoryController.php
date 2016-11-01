@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Category;
+
 class CategoryController extends Controller
 {
     /**
@@ -25,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.category.add');
     }
 
     /**
@@ -36,7 +38,13 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $category = new Category;
+        
+        $category->name = $request->categoryName;
+
+        $category->save();
+        
+        return redirect('/admin/category/show');
     }
 
     /**
@@ -45,9 +53,11 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $categories= Category::all();
+        
+        return view('admin.category.show', compact('categories'));
     }
 
     /**

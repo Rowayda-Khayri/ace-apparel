@@ -20,10 +20,14 @@ Route::get('/admin', function () {
 });
 
 
+Route::get('/admin/category/add', 'CategoryController@create');
+Route::post('/admin/category/add', 'CategoryController@create');
+Route::post('/admin/category/store', 'CategoryController@store');
+Route::get('/admin/category/show', 'CategoryController@show');
+//Route::post('/admin/category/show', 'CategoryController@show');
 
-//Route::get('/admin/category/add', function () {
-//    return view('/admin/category/add');
-//});
 
-Route::get('/admin/category/add', 'CategoryController@add');
+
+
+
 
