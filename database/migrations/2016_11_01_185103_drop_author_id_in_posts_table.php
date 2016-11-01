@@ -13,7 +13,7 @@ class DropAuthorIdInPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            //
+            $table->dropColumn('author_id');
         });
     }
 
@@ -25,8 +25,7 @@ class DropAuthorIdInPostsTable extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            
-            $table->dropForeign('author_id');
+            //
         });
     }
 }

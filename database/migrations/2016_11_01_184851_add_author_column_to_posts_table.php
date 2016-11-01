@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class DropAuthorIdInPostsTable extends Migration
+class AddAuthorColumnToPostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class DropAuthorIdInPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            //
+            $table->string('author');
         });
     }
 
@@ -25,9 +25,7 @@ class DropAuthorIdInPostsTable extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            
-            $table->dropForeign(['author_id']);
-            
+            //
         });
     }
 }
