@@ -34,7 +34,7 @@
 
 										<div class="post-meta">
 											<span><i class="fa fa-user"></i> By <a href="#">{{$post->author}} ,</a> </span>
-											<span><i class="fa fa-tag"></i> <a href="#">Duis</a>, <a href="#">{{$post->category_id}}</a> </span>
+											<span><i class="fa fa-tag"></i>  <a href="#">{{$post->category_name}} ,</a> </span>
 											<span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
 										</div>
 

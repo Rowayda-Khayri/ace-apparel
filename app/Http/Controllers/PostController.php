@@ -63,8 +63,14 @@ class PostController extends Controller
      */
     public function show()
     {
-        $posts= Post::all();
-        
+//        $posts= Post::all();
+        $posts = Post::query()
+                        ->leftjoin('categories as c', 'c.id', '=', 'posts.category_id')
+                        ->get([
+                            'posts.*',
+                            'c.name as category_name'
+                        ])->sortByDesc("created_at");
+
         return view('admin.post.show', compact('posts'));
 //        return "show posts";
     }
