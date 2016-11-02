@@ -3,12 +3,12 @@
 
 @section('adminPageContent')
 
-<h1> Add Blog Category </h1>
+<h1> Edit Blog Category </h1>
 
 </br>
 
 
-<form method="POST" action="/admin/post/store">
+<form method="POST" action="/admin/post/update">
     
     <label> Post Category :</label>
     
@@ -54,3 +54,4 @@
     
    
 @stop
+

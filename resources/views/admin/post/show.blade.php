@@ -19,13 +19,17 @@
 
 					<div class="row pt-sm">
 						<div class="col-md-12">
-							<div class="blog-posts single-post mt-xl">
-
+							<div class="blog-posts single-post mt-xl"> 
+                                                            
+                                                            
 								<article class="post post-large blog-single-post">
 
 									<div class="post-date">
 										<span class="day">{{$post->created_at->day}}</span>
 										<span class="month">{{ date('M', strtotime($post->created_at)) }}</span>
+                                                                                
+                                                                                <a style="margin-left: 100px;" href="/admin/post/edit/{{$post->id}}">Edit Post</a>
+
 									</div>
 
 									<div class="post-content">
