@@ -3,17 +3,17 @@
 
 @section('adminPageContent')
 
-<h1> Edit Blog Category </h1>
+<h1> Edit Blog Post </h1>
 
 </br>
 
-
-<form method="POST" action="/admin/post/update">
-     @foreach($posts as $post)
+ @foreach($posts as $post)
+<form method="POST" action="/admin/post/update/{{$post->id}}">
+    
     <label> Post Category :</label>
     
     <select name="postCategory">
-                    <option  selected></option>
+                    <option  selected>{{$post->category_name}}</option>
                     
                     @foreach($categories as $category)
                     
@@ -24,19 +24,19 @@
     
     <label> Post Author :</label>
     
-    <input  type="text" name="postAuthor" value="{{$post->category_name}}" required>
+    <input  type="text" name="postAuthor" value="{{$post->author}}" required>
                    
         
     </br></br>
     
     <label> Post Title :</label>
-    <input  type="text" name="postTitle" value="" required>
+    <input  type="text" name="postTitle" value="{{$post->title}}" required>
     
     </br></br>
     
     <label> Post Body :</label>
     
-    <textarea class="form-control" name="postBody" placeholder="Type your post here .." required></textarea>
+    <textarea style="height: 250px;" class="form-control" name="postBody" placeholder="Type your post here .." required>{{$post->body}}</textarea>
     <!--<input  type="text" name="postBody" value="" required>-->
     </br></br>
     
@@ -45,7 +45,7 @@
     
     
     
-    <input  type="submit" name="add" value="Add" class="btn btn-primary" />
+    <input  type="submit" name="edit" value="Edit" class="btn btn-primary" />
     
     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
     <!--<button type="submit">ADDDD</button>-->

@@ -36,7 +36,7 @@
     
     <label> Post Body :</label>
     
-    <textarea class="form-control" name="postBody" placeholder="Type your post here .." required></textarea>
+    <textarea  style="height: 250px;" class="form-control" name="postBody" placeholder="Type your post here .." required></textarea>
     <!--<input  type="text" name="postBody" value="" required>-->
     </br></br>
     
