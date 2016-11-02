@@ -19,6 +19,13 @@ Route::get('/admin', function () {
     return view('adminLayout');
 });
 
+Route::get('/test', function () {
+    return view('blog-single');
+});
+
+
+
+
 Route::get('/admin/category', 'CategoryController@show');
 Route::get('/admin/category/add', 'CategoryController@create');
 Route::post('/admin/category/add', 'CategoryController@create');

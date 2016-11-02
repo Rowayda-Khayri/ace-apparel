@@ -67,7 +67,9 @@
 											<!--<p class="mt-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat.</p>-->
 										</div>
 
-										<div class="post-block post-comments clearfix">
+                                                                                
+    <!----------------------------------------------------------------------------Comments---------------------------------------------------------------------------------------------------->                                                                            
+<!--										<div class="post-block post-comments clearfix">
 											<h4 class="mt-xl mb-md">Comments</h4>
 
 											<ul class="comments">
@@ -166,9 +168,17 @@
 												</li>
 											</ul>
 
-										</div>
+										</div>-->
+    
+        <!----------------------------------------------------------------------------/Comments---------------------------------------------------------------------------------------------------->                                                                            
 
-										<div class="post-block post-leave-comment mb-xl">
+
+        
+        
+        <!----------------------------------------------------------------------------Leave Comment ------------------>
+        
+        
+<!--										<div class="post-block post-leave-comment mb-xl">
 											<h4 class="mt-xl mb-md">Leave a Comment</h4>
 
 											<form action="" method="post">
@@ -199,6 +209,10 @@
 												</div>
 											</form>
 										</div>
+        -->
+        
+                <!----------------------------------------------------------------------------/Leave Comment ------------------>
+
 
 									</div>
 								</article>
