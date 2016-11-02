@@ -69,7 +69,7 @@ class PostController extends Controller
                         ->leftjoin('categories as c', 'c.id', '=', 'posts.category_id')
                         ->get([
                             'posts.*',
-                            'c.name as category_name',
+                            'c.name as category_name'
                               ])->sortByDesc("created_at");
         
 //        $day = $posts[0]->created_at->day ;
@@ -91,7 +91,19 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        $posts = Post::query()
+                        ->leftjoin('categories as c', 'c.id', '=', 'posts.category_id')
+                        ->where("posts.id", "=", "$id")
+                        ->get([
+                            'posts.*',
+                            'c.name as category_name'
+                              ])->sortByDesc("created_at");
+        
+        $categories= Category::all();
+        
+        return view('admin.post.edit', compact('posts','categories'));
+//        return "$id";
     }
 
     /**
