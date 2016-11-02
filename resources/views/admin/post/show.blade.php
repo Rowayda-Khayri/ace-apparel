@@ -24,8 +24,8 @@
 								<article class="post post-large blog-single-post">
 
 									<div class="post-date">
-										<span class="day">10</span>
-										<span class="month">Jan</span>
+										<span class="day">{{$post->created_at->day}}</span>
+										<span class="month">{{ date('M', strtotime($post->created_at)) }}</span>
 									</div>
 
 									<div class="post-content">

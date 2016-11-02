@@ -10,6 +10,7 @@ use App\Post;
 use App\Category;
 
 use DateTime;
+use Carbon\Carbon;
 
 class PostController extends Controller
 {
@@ -50,6 +51,7 @@ class PostController extends Controller
         $post->body = $request->postBody;
         $post->author = $request->postAuthor;
 
+//        $post->created_at = Carbon::now()->toFormattedDateString();
         $post->save();
         
         return redirect('/admin/post/show');
@@ -63,14 +65,20 @@ class PostController extends Controller
      */
     public function show()
     {
-//        $posts= Post::all();
         $posts = Post::query()
                         ->leftjoin('categories as c', 'c.id', '=', 'posts.category_id')
                         ->get([
                             'posts.*',
-                            'c.name as category_name'
-                        ])->sortByDesc("created_at");
+                            'c.name as category_name',
+                              ])->sortByDesc("created_at");
+        
+//        $day = $posts[0]->created_at->day ;
+        
+//        foreach($posts as $post){
+//            $post->created_at = $post->created_at->toFormattedDateString();
+//        }
 
+//        $test = $posts[0]->created_at;
         return view('admin.post.show', compact('posts'));
 //        return "show posts";
     }
