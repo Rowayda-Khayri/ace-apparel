@@ -110,6 +110,16 @@ class ContactInfoController extends Controller
         
         return view('admin.contactInfo.show', compact('contact','hours'));
     }
+    
+    
+     public function clientShow()
+    {
+        $contact = Contact_info::orderBy('created_at', 'desc')->first();
+        $hours = Hour::orderBy('created_at', 'desc')->first();
+                        
+        
+        return view('contact', compact('contact','hours'));
+    }
 
     /**
      * Show the form for editing the specified resource.

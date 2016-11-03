@@ -68,6 +68,8 @@ Route::post('/admin/contactInfo/update', 'ContactInfoController@update');
 Route::get('/', 'PostController@indexBlog');
 Route::get('blogSingle/{id}', 'PostController@blogSingle');
 
+Route::get('contact', 'ContactInfoController@clientShow');
+
 
 
 
