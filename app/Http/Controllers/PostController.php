@@ -44,6 +44,8 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+//        $request->postCategory;
+//        $postCategory= Category::find($request->postCategory);
         $post = new Post;
         
         $post->title = $request->postTitle;
@@ -54,7 +56,8 @@ class PostController extends Controller
 //        $post->created_at = Carbon::now()->toFormattedDateString();
         $post->save();
         
-        return redirect('/admin/post/show');
+//        return redirect('/admin/post/show');
+        return $request->postCategory;
     }
 
     /**
@@ -115,7 +118,16 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post= Post::find($id);
+        $post->title = $request->postTitle;
+        $post->author = $request->postAuthor;
+        $post->body = $request->postBody;
+//        $post->category_id = ;
+        $post->updated_at = new DateTime;
+        $post->save();
+        
+
+        return redirect('/admin/category/show');
     }
 
     /**

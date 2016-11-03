@@ -11,7 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+
+
+
+Route::group(['middleware' => ['web']], function () {
+    
+    
+    
+    Route::get('/', function () {
     return view('welcome');
 });
 
@@ -43,6 +50,9 @@ Route::post('/admin/post/store', 'PostController@store');
 Route::get('/admin/post/edit/{id}', 'PostController@edit');
 Route::post('/admin/post/update', 'PostController@update');
 
+
+
+});
 
 
 
