@@ -12,6 +12,8 @@
 
 </br>
 
+<label> Note : If you add new contact info , the last one will be automatically deleted.</label>
+</br></br>  
 
 <form method="POST" action="/admin/contactInfo/add">
     

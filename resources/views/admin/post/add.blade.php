@@ -8,7 +8,7 @@
 </br>
 
 
-<form method="POST" action="/admin/post/store">
+<form method="POST" action="/admin/post/store"  >
     
     <label> Post Category :</label>
     
