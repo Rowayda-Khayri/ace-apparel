@@ -48,7 +48,7 @@ Route::get('/admin/post/show', 'PostController@show');
 Route::post('/admin/post/add', 'PostController@create');
 Route::post('/admin/post/store', 'PostController@store');
 Route::get('/admin/post/edit/{id}', 'PostController@edit');
-Route::post('/admin/post/update', 'PostController@update');
+Route::post('/admin/post/update/{id}', 'PostController@update');
 
 
 
