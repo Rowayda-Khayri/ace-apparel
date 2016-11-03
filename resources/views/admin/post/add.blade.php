@@ -3,7 +3,7 @@
 
 @section('adminPageContent')
 
-<h1> Add Blog Category </h1>
+<h1> Add Blog Post </h1>
 
 </br>
 
