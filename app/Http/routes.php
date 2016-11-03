@@ -59,12 +59,6 @@ Route::get('/admin/contactInfo/edit', 'ContactInfoController@edit');
 Route::post('/admin/contactInfo/update', 'ContactInfoController@update');
 
 
-
-Route::get('fileUpload', function () {
-        return view('admin.post.    fileUpload');
-    });
-    Route::post('fileUpload', ['as'=>'fileUpload','uses'=>'PostController@fileUpload']);
-
 });
 
 
