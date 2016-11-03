@@ -231,7 +231,7 @@
                                                 </div>
                                                 <h4 class="pt-md pb-none mb-none"><a class="text-color-dark" href="/post/blogSingle/{{$lastPost->id}}">{{$lastPost->title}}</a></h4>
                                                 <p>By {{$lastPost->author}}</p>
-                                                <p>{{$lastPost->body}}</p>
+                                                <p>{{str_limit("$lastPost->body", 100)}}</p>
                                                 <a class="mt-md" href="/post/blogSingle/{{$lastPost->id}}">Read More <i class="fa fa-long-arrow-right"></i></a>
                                         </article>
                                 </div>

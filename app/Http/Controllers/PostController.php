@@ -160,6 +160,8 @@ class PostController extends Controller
         
         $lastPost = Post::orderBy('created_at', 'desc')->first();
         
+//        $lastPost->body = str_limit("$lastPost->body", 7);
+        
         return view('index', compact('lastPost'));
 //        return $lastPost;
         
