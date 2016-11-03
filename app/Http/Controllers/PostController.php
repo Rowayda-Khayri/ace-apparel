@@ -158,7 +158,12 @@ class PostController extends Controller
         $hours = Hour::orderBy('created_at', 'desc')->first();
         
         
-        return view('index', compact('lastPosts','contact','hours'));
+        
+        // to show blog categories in header
+        $categories= Category::all();
+        
+        
+        return view('index', compact('lastPosts','contact','hours','categories'));
 
         
     }
@@ -182,7 +187,12 @@ class PostController extends Controller
         $hours = Hour::orderBy('created_at', 'desc')->first();
         
         
-        return view('blogSingle', compact('post','contact','hours'));
+        
+        // to show blog categories in header
+        $categories= Category::all();
+        
+        
+        return view('blogSingle', compact('post','contact','hours','categories'));
     }
     
     

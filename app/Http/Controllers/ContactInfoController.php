@@ -8,6 +8,7 @@ use App\Http\Requests;
 
 use App\Contact_info;
 use App\Hour;
+use App\Category;
 
 use DateTime;
 use Carbon\Carbon;
@@ -112,9 +113,13 @@ class ContactInfoController extends Controller
     {
         $contact = Contact_info::orderBy('created_at', 'desc')->first();
         $hours = Hour::orderBy('created_at', 'desc')->first();
-                        
         
-        return view('contact', compact('contact','hours'));
+        
+        // to show blog categories in header
+        $categories= Category::all();
+        
+        
+        return view('contact', compact('contact','hours','categories'));
     }
 
     /**

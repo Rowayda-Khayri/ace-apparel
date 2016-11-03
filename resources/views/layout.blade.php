@@ -111,10 +111,17 @@
 															Products
 														</a>
 													</li>
-													<li>
-														<a href="blog.html">
+													<li class="dropdown">
+														<a class="dropdown-toggle" href="blog">
 															Blog
 														</a>
+														<ul class="dropdown-menu">
+                                                                                                                    
+                                                                                                                    @foreach($categories as $category)
+															<li><a href="demo-construction-services-detail.html">{{$category->name}}</a></li>
+                                                                                                                        
+                                                                                                                    @endforeach
+														</ul>
 													</li>
 													<li>
 														<a href="contact">

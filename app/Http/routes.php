@@ -70,6 +70,8 @@ Route::get('blogSingle/{id}', 'PostController@blogSingle');
 
 Route::get('contact', 'ContactInfoController@clientShow');
 
+Route::get('blog', 'PostController@showAll');
+
 
 
 
