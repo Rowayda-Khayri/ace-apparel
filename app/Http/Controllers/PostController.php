@@ -143,6 +143,13 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post= Post::find($id);
+        
+        $post->deleted_at = new DateTime();
+        
+        $post->save();
+        $post->delete();
+        
+        return redirect('/admin/post/show');
     }
 }

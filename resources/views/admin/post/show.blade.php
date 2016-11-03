@@ -30,6 +30,8 @@
                                                                                 
                                                                                 <a style="margin-left: 100px;" href="/admin/post/edit/{{$post->id}}">Edit Post</a>
 
+                                                                                <a style="margin-left: 100px;" href="/admin/post/destroy/{{$post->id}}">Delete Post</a>
+
 									</div>
 
 									<div class="post-content">
