@@ -44,7 +44,7 @@
 											<span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
 										</div>
 
-										<img src="img/demos/construction/blog/blog-construction-1.jpg" class="img-responsive pull-right mb-md mb-xs ml-xl" alt="" style="width: 360px;">
+										<img src="../../img/demos/construction/blog/blog-construction-1.jpg" class="img-responsive pull-right mb-md mb-xs ml-xl" alt="" style="width: 360px;">
 
                                                                                 
                                                                                 <p>
