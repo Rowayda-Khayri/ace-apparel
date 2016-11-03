@@ -51,20 +51,28 @@ class ContactInfoController extends Controller
         // delete old info
         
         $oldContact = Contact_info::orderBy('created_at', 'desc')->first();
-
-        $oldContact->deleted_at = new DateTime();
+       
+        if($oldContact){ // if this is not the first record in db
+            
+            $oldContact->deleted_at = new DateTime();
         
-        $oldContact->save();
+            $oldContact->save();
 //        $oldContact->delete();
+        }
+        
         
         //delete old hours
         
         $oldhours = Hour::orderBy('created_at', 'desc')->first();
 
-        $oldhours->deleted_at = new DateTime();
+        if($oldContact){ // if this is not the first record in db
+            
+            $oldhours->deleted_at = new DateTime();
         
-        $oldhours->save();
+            $oldhours->save();
 //        $oldhours->delete();
+        }
+        
          
        // save  new contact info 
 
