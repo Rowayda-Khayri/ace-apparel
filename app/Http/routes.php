@@ -53,6 +53,10 @@ Route::get('/admin/post/destroy/{id}', 'PostController@destroy');
 
 
 
+Route::get('/admin/contactInfo/add', 'ContactInfoController@create');
+
+
+
 });
 
 

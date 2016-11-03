@@ -25,7 +25,11 @@ class ContactInfoController extends Controller
      */
     public function create()
     {
-        //
+        
+        
+//        $categories= Category::all();
+        
+        return view('admin.contactInfo.add');
     }
 
     /**
