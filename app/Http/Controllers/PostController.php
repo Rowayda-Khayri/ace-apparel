@@ -159,11 +159,13 @@ class PostController extends Controller
     public function indexBlog()   // show latest 3 posts in Blog section in index page
     {
         
-        $lastPost = Post::orderBy('created_at', 'desc')->first();
+//        $lastPost = Post::orderBy('created_at', 'desc')->first();
+        
+        $lastPosts = Post::orderBy('created_at','desc')->take(3)->get();
         
 //        $lastPost->body = str_limit("$lastPost->body", 7);
         
-        return view('index', compact('lastPost'));
+        return view('index', compact('lastPosts'));
 //        return $lastPost;
         
     }

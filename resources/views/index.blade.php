@@ -219,6 +219,9 @@
 
 <!------------------------------------the latest 3 posts---------------------------------------->
 
+
+            @foreach($lastPosts as $lastPost)
+            
                         <div class="col-md-4">
                                 <div class="recent-posts mt-xl">
                                         <a href="blogSingle/{{$lastPost->id}}">
@@ -236,6 +239,8 @@
                                         </article>
                                 </div>
                         </div>
+            
+            @endforeach
 
     <!--------------- /the latest 3 posts---------------------------------------->
 
