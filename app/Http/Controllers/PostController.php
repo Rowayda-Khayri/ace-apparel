@@ -162,16 +162,21 @@ class PostController extends Controller
         
 //        $lastPost->body = str_limit("$lastPost->body", 7);
         
-        return view('index', compact('lastPost'));
+        return view('client.index', compact('lastPost'));
 //        return $lastPost;
         
     }
     
     
-    public function blogSingle()   // show single post page
+    public function blogSingle()   // show latest 3 posts in Blog section in index page
     {
         
-        return "blogSingle";
+        $lastPost = Post::orderBy('created_at', 'desc')->first();
+        
+//        $lastPost->body = str_limit("$lastPost->body", 7);
+        
+        return view('client.index', compact('lastPost'));
+//        return $lastPost;
         
     }
     

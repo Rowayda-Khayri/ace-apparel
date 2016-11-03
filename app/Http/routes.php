@@ -31,6 +31,10 @@ Route::get('/test', function () {
 });
 
 
+Route::get('/', function () {
+    return view('layout');
+});
+
 
 
 Route::get('/admin/category', 'CategoryController@show');
@@ -61,9 +65,13 @@ Route::post('/admin/contactInfo/update', 'ContactInfoController@update');
 
 /********* normal user routes **************************/
 
+//Route::get('/', 'PostController@indexBlog');
+
+Route::get('/client/blogSingle', 'PostController@indexBlog');
+
 Route::get('/', 'PostController@indexBlog');
 
-Route::get('/post/blogSingle/{id}', 'PostController@blogSingle');
+
 
 
 
