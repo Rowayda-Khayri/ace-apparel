@@ -74,7 +74,6 @@ class CategoryController extends Controller
         
 
         return view('admin.category.edit', compact('category'));
-//        return "edit"
 ;    }
 
     /**
@@ -111,7 +110,6 @@ class CategoryController extends Controller
         $category->deleted_at = new DateTime();
         
         $category->save();
-//        $category->delete();
         
         return redirect('/admin/category/show');
     }

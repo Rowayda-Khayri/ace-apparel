@@ -34,8 +34,6 @@ class ContactInfoController extends Controller
     {
         
         
-//        $categories= Category::all();
-        
         return view('admin.contactInfo.add');
     }
 
@@ -57,7 +55,6 @@ class ContactInfoController extends Controller
             $oldContact->deleted_at = new DateTime();
         
             $oldContact->save();
-//        $oldContact->delete();
         }
         
         
@@ -70,7 +67,7 @@ class ContactInfoController extends Controller
             $oldhours->deleted_at = new DateTime();
         
             $oldhours->save();
-//        $oldhours->delete();
+
         }
         
          
@@ -93,7 +90,6 @@ class ContactInfoController extends Controller
         $hours->save();
         
         return redirect('/admin/contactInfo/show');
-//        return "contact stored";
     }
 
     /**

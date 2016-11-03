@@ -46,7 +46,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-//        $request->postCategory;
         
         $postCategory= Category::where("name","$request->postCategory")->first();
         $post = new Post;
@@ -60,7 +59,6 @@ class PostController extends Controller
         $post->save();
         
         return redirect('/admin/post/show');
-//        return $postCategory->id;
     }
 
     /**
@@ -78,15 +76,8 @@ class PostController extends Controller
                             'c.name as category_name'
                               ])->sortByDesc("created_at");
         
-//        $day = $posts[0]->created_at->day ;
-        
-//        foreach($posts as $post){
-//            $post->created_at = $post->created_at->toFormattedDateString();
-//        }
-
-//        $test = $posts[0]->created_at;
         return view('admin.post.show', compact('posts'));
-//        return "show posts";
+
     }
 
     /**
@@ -105,7 +96,7 @@ class PostController extends Controller
                             'posts.*',
                             'c.name as category_name'
                               ]);
-//                ->sortByDesc("created_at");
+
         
         $categories= Category::all();
         
@@ -151,7 +142,6 @@ class PostController extends Controller
         $post->deleted_at = new DateTime();
         
         $post->save();
-//        $post->delete();
         
         return redirect('/admin/post/show');
     }
@@ -161,8 +151,6 @@ class PostController extends Controller
     public function indexBlog()   // show latest 3 posts in Blog section in index page
     {
         
-//        $lastPost = Post::orderBy('created_at', 'desc')->first();
-        
         $lastPosts = Post::orderBy('created_at','desc')->take(3)->get();
         
         //to show in footer
@@ -170,10 +158,8 @@ class PostController extends Controller
         $hours = Hour::orderBy('created_at', 'desc')->first();
         
         
-//        $lastPost->body = str_limit("$lastPost->body", 7);
-        
         return view('index', compact('lastPosts','contact','hours'));
-//        return $lastPost;
+
         
     }
     
@@ -196,9 +182,6 @@ class PostController extends Controller
         $hours = Hour::orderBy('created_at', 'desc')->first();
         
         
-        
-//        $post= Post::find($id);
-//        return "blogSingle";
         return view('blogSingle', compact('post','contact','hours'));
     }
     
