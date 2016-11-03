@@ -102,7 +102,8 @@ class PostController extends Controller
                         ->get([
                             'posts.*',
                             'c.name as category_name'
-                              ])->sortByDesc("created_at");
+                              ]);
+//                ->sortByDesc("created_at");
         
         $categories= Category::all();
         
@@ -162,22 +163,27 @@ class PostController extends Controller
         
 //        $lastPost->body = str_limit("$lastPost->body", 7);
         
-        return view('client.index', compact('lastPost'));
+        return view('index', compact('lastPost'));
 //        return $lastPost;
         
     }
     
     
-    public function blogSingle()   // show latest 3 posts in Blog section in index page
+    public function blogSingle($id)   // 
     {
         
-        $lastPost = Post::orderBy('created_at', 'desc')->first();
         
-//        $lastPost->body = str_limit("$lastPost->body", 7);
         
-        return view('client.index', compact('lastPost'));
-//        return $lastPost;
+        $post = Post::query()
+                        ->leftjoin('categories as c', 'c.id', '=', 'posts.category_id')
+                        ->where("posts.id", "=", "$id")
+                        ->get([
+                            'posts.*',
+                            'c.name as category_name' ])->first();
         
+//        $post= Post::find($id);
+//        return "blogSingle";
+        return view('blogSingle', compact('post'));
     }
     
     

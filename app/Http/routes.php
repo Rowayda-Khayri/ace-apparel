@@ -65,11 +65,9 @@ Route::post('/admin/contactInfo/update', 'ContactInfoController@update');
 
 /********* normal user routes **************************/
 
-//Route::get('/', 'PostController@indexBlog');
-
-Route::get('/client/blogSingle', 'PostController@indexBlog');
-
 Route::get('/', 'PostController@indexBlog');
+Route::get('blogSingle/{id}', 'PostController@blogSingle');
+
 
 
 
