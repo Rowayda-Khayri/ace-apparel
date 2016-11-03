@@ -8,6 +8,8 @@ use App\Http\Requests;
 
 use App\Post;
 use App\Category;
+use App\Contact_info;
+use App\Hour;
 
 use DateTime;
 use Carbon\Carbon;
@@ -163,9 +165,14 @@ class PostController extends Controller
         
         $lastPosts = Post::orderBy('created_at','desc')->take(3)->get();
         
+        //to show in footer
+        $contact = Contact_info::orderBy('created_at', 'desc')->first();
+        $hours = Hour::orderBy('created_at', 'desc')->first();
+        
+        
 //        $lastPost->body = str_limit("$lastPost->body", 7);
         
-        return view('index', compact('lastPosts'));
+        return view('index', compact('lastPosts','contact','hours'));
 //        return $lastPost;
         
     }
@@ -183,9 +190,16 @@ class PostController extends Controller
                             'posts.*',
                             'c.name as category_name' ])->first();
         
+        
+        //to show in footer
+        $contact = Contact_info::orderBy('created_at', 'desc')->first();
+        $hours = Hour::orderBy('created_at', 'desc')->first();
+        
+        
+        
 //        $post= Post::find($id);
 //        return "blogSingle";
-        return view('blogSingle', compact('post'));
+        return view('blogSingle', compact('post','contact','hours'));
     }
     
     

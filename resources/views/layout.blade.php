@@ -86,7 +86,7 @@
 											<nav>
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="active">
-														<a href="index.html">
+														<a href="/">
 															Home
 														</a>
 													</li>
@@ -215,7 +215,7 @@
 
 							</div>
 
-							<p><i class="fa fa-phone"></i> (123) 456-789 <i class="fa fa-envelope ml-sm"></i> <a href="mailto: mail@example.com">mail@example.com</a></p>
+							<p><i class="fa fa-phone"></i> {{$contact->phone}} <i class="fa fa-envelope ml-sm"></i> <a href="mailto: mail@example.com">{{$contact->email}}</a></p>
 
 						</div>
 					</div>
