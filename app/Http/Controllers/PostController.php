@@ -148,7 +148,7 @@ class PostController extends Controller
         $post->deleted_at = new DateTime();
         
         $post->save();
-        $post->delete();
+//        $post->delete();
         
         return redirect('/admin/post/show');
     }

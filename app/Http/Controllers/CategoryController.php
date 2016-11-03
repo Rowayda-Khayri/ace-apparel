@@ -111,7 +111,7 @@ class CategoryController extends Controller
         $category->deleted_at = new DateTime();
         
         $category->save();
-        $category->delete();
+//        $category->delete();
         
         return redirect('/admin/category/show');
     }
