@@ -13,40 +13,40 @@
 </br>
 
 
-<form method="POST" action="/admin/contactInfo/update/">
+<form method="POST" action="/admin/contactInfo/update">
     
     
     
     <label> Address :</label>
     
-    <textarea  style="height: 50px;" class="form-control" name="address"  required></textarea>
+    <textarea  style="height: 50px;" class="form-control" name="address"  required>{{$contact->address}}</textarea>
                   
         
     </br></br>
     
     <label> Phone :</label>
-    <input  type="text" name="phone" value="" required>
+    <input  type="text" name="phone" value="{{$contact->phone}}" required>
     
     </br></br>
     
     <label> Email :</label>
-    <input  type="text" name="email" value="" required>
+    <input  type="text" name="email" value="{{$contact->email}}" required>
     
     </br></br>
     
      <label> Facebook :</label>
-    <input  type="text" name="facebook" value="" required>
+    <input  type="text" name="facebook" value="{{$contact->facebook}}" required>
     
     </br></br>
     
      <label> Twitter :</label>
-    <input  type="text" name="twitter" value="" required>
+    <input  type="text" name="twitter" value="{{$contact->twitter}}" required>
     
     </br></br>
     
     <label> Bussiness Hours :</label>
     
-    <textarea  style="height: 50px;" class="form-control" name="hours" placeholder="Monday - Friday - 9am to 5pm / Sunday - Closed" required></textarea>
+    <textarea  style="height: 50px;" class="form-control" name="hours"  required>{{$hours->content}}</textarea>
     <!--<input  type="text" name="postBody" value="" required>-->
     </br></br>
     

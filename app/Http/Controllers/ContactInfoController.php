@@ -92,8 +92,8 @@ class ContactInfoController extends Controller
         $hours->content = $request->hours;
         $hours->save();
         
-//        return redirect('/admin/post/show');
-        return "contact stored";
+        return redirect('/admin/contactInfo/show');
+//        return "contact stored";
     }
 
     /**
@@ -117,9 +117,13 @@ class ContactInfoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        $contact = Contact_info::orderBy('created_at', 'desc')->first();
+        $hours = Hour::orderBy('created_at', 'desc')->first();
+                        
+        
+        return view('admin.contactInfo.edit', compact('contact','hours'));
     }
 
     /**
@@ -129,9 +133,25 @@ class ContactInfoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        
+        $contact = Contact_info::orderBy('created_at', 'desc')->first();
+        $hours = Hour::orderBy('created_at', 'desc')->first();
+        
+        $contact->address = $request->address;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->facebook = $request->facebook;
+        $contact->twitter = $request->twitter;
+        $contact->updated_at = new DateTime;
+        $contact->save();
+        
+        $hours->content = $request->hours;
+        $hours->save();
+        
+
+        return redirect('/admin/contactInfo/show');
     }
 
     /**

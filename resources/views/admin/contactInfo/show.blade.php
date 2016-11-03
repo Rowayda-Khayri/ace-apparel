@@ -23,7 +23,7 @@
     
     @if($contact)
     
-    <a style="margin-left: 100px;" href="/admin/contactInfo/edit/{{$contact->id}}">Edit Contact Info</a>
+    <a style="margin-left: 100px;" href="/admin/contactInfo/edit">Edit Contact Info</a>
     
     </br>    </br>
     
