@@ -156,7 +156,7 @@
 								<div class="col-md-6">
 									<ul class="list list-footer-nav">
 										<li>
-											<a href="demo-construction.html">
+											<a href="/">
 												Home
 											</a>
 										</li>
@@ -185,7 +185,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="demo-construction-contact.html">
+											<a href="contact">
 												Contact
 											</a>
 										</li>
