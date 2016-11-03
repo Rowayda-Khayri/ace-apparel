@@ -13,8 +13,8 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -23,38 +23,38 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="/assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.min.css">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="{{ asset('css/theme.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/theme-elements.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/theme-blog.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/theme-shop.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/theme-animate.css') }}">
+		<link rel="stylesheet" href="/assets/css/theme.css">
+		<link rel="stylesheet" href="/assets/css/theme-elements.css">
+		<link rel="stylesheet" href="/assets/css/theme-blog.css">
+		<link rel="stylesheet" href="/assets/css/theme-shop.css">
+		<link rel="stylesheet" href="/assets/css/theme-animate.css">
 
 		<!-- Current Page CSS -->
-		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
-		<link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
-		<link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
-		<link rel="stylesheet" href="vendor/nivo-slider/nivo-slider.css">
-		<link rel="stylesheet" href="vendor/nivo-slider/default/default.css">
+		<link rel="stylesheet" href="/assets/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="/assets/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="/assets/vendor/rs-plugin/css/navigation.css">
+		<link rel="stylesheet" href="/assets/vendor/nivo-slider/nivo-slider.css">
+		<link rel="stylesheet" href="/assets/vendor/nivo-slider/default/default.css">
 
 		<!-- Skin CSS -->
-		<link rel="stylesheet" href="{{ asset('css/skins/skin-construction.css') }}"> 
+		<link rel="stylesheet" href="/assets/css/skins/skin-construction.css"> 
 
 		<!-- Demo CSS -->
-		<link rel="stylesheet" href="{{ asset('css/demos/demo-construction.css') }}">
+		<link rel="stylesheet" href="/assets/css/demos/demo-construction.css">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+		<link rel="stylesheet" href="/assets/css/custom.css">
 
 		<!-- Head Libs -->
-		<script src="vendor/modernizr/modernizr.min.js"></script>
+		<script src="/assets/vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
 	<body data-spy="scroll" data-target="#sidebar" data-offset="120">
@@ -66,9 +66,9 @@
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-logo">
-									<img class="logo-default" alt="Porto" width="324" height="212" src="img/demos/construction/logo-construction.png">
-									<a href="index.html">
-										<img class="logo-small" alt="Porto" width="131" height="48" src="img/demos/construction/logo-construction-small.png">
+									<img class="logo-default" alt="Porto" width="324" height="212" src="/assets/img/demos/construction/logo-construction.png">
+									<a href="/">
+										<img class="logo-small" alt="Porto" width="131" height="48" src="/assets/img/demos/construction/logo-construction-small.png">
 									</a>
 								</div>
 							</div>
@@ -137,7 +137,7 @@
 					<div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options='{"delay": 9000, "gridwidth": 1170, "gridheight": 700, "disableProgressBar": "on"}'>
 						<ul>
 							<li data-transition="fade">
-								<img src="img/demos/construction/slides/slide-construction-1.jpg"  
+								<img src="/assets/img/demos/construction/slides/slide-construction-1.jpg"  
 									alt=""
 									data-bgposition="center 100%" 
 									data-bgfit="cover" 
@@ -151,7 +151,7 @@
 									data-transform_in="x:[100%];opacity:0;s:1000;">#1 FASTEST-GROWING COMPANY</div>
 							</li>
 							<li data-transition="fade">
-								<img src="img/demos/construction/slides/slide-construction-2.jpg"  
+								<img src="/assets/img/demos/construction/slides/slide-construction-2.jpg"  
 									alt=""
 									data-bgposition="center 100%" 
 									data-bgfit="cover" 
@@ -197,7 +197,7 @@
 							<div class="col-md-6">
 								<div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 									<div class="feature-box-icon">
-										<img src="img/demos/construction/icons/ground-construction.png" alt="" class="img-responsive" />
+										<img src="/assets/img/demos/construction/icons/ground-construction.png" alt="" class="img-responsive" />
 									</div>
 									<div class="feature-box-info ml-md">
 										<h4 class="mb-sm">Pre-Construction</h4>
@@ -209,7 +209,7 @@
 							<div class="col-md-6">
 								<div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
 									<div class="feature-box-icon">
-										<img src="img/demos/construction/icons/construction.png" alt="" class="img-responsive" />
+										<img src="/assets/img/demos/construction/icons/construction.png" alt="" class="img-responsive" />
 									</div>
 									<div class="feature-box-info ml-md">
 										<h4 class="mb-sm">General Construction</h4>
@@ -224,7 +224,7 @@
 							<div class="col-md-6">
 								<div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 									<div class="feature-box-icon">
-										<img src="img/demos/construction/icons/painting.png" alt="" class="img-responsive" />
+										<img src="/assets/img/demos/construction/icons/painting.png" alt="" class="img-responsive" />
 									</div>
 									<div class="feature-box-info ml-md">
 										<h4 class="mb-sm">Painting</h4>
@@ -236,7 +236,7 @@
 							<div class="col-md-6">
 								<div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
 									<div class="feature-box-icon">
-										<img src="img/demos/construction/icons/plumbing.png" alt="" class="img-responsive" />
+										<img src="/assets/img/demos/construction/icons/plumbing.png" alt="" class="img-responsive" />
 									</div>
 									<div class="feature-box-info ml-md">
 										<h4 class="mb-sm">Plumbing</h4>
@@ -259,51 +259,51 @@
 								<div class="lightbox" data-plugin-options='{"delegate": ".diamond", "type": "image", "gallery": {"enabled": true}}'>
 									<ul class="diamonds">
 										<li>
-											<a href="img/demos/construction/gallery/construction-gallery-1.jpg" class="diamond">
+											<a href="/assets/img/demos/construction/gallery/construction-gallery-1.jpg" class="diamond">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-1.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-1.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
 										<li>
 											<a href="img/demos/construction/gallery/construction-gallery-2.jpg" class="diamond">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-2.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-2.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
 										<li>
 											<a href="img/demos/construction/gallery/construction-gallery-3.jpg" class="diamond">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-3.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-3.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
 										<li>
 											<a href="img/demos/construction/gallery/construction-gallery-4.jpg" class="diamond diamond-sm">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-4.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-4.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
 										<li>
 											<a href="img/demos/construction/gallery/construction-gallery-5.jpg" class="diamond">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-5.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-5.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
 										<li>
 											<a href="img/demos/construction/gallery/construction-gallery-6.jpg" class="diamond diamond-sm">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-6.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-6.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
 										<li>
 											<a href="img/demos/construction/gallery/construction-gallery-7.jpg" class="diamond diamond-sm">
 												<div class="content">
-													<img src="img/demos/construction/gallery/construction-gallery-7.jpg" class="img-responsive" />
+													<img src="/assets/img/demos/construction/gallery/construction-gallery-7.jpg" class="img-responsive" />
 												</div>
 											</a>
 										</li>
@@ -341,7 +341,7 @@
 							<div class="col-md-4">
 								<div class="recent-posts mt-xl">
 									<a href="demo-construction-blog-detail.html">
-										<img class="img-responsive pb-md" src="img/demos/construction/blog/blog-construction-1.jpg" alt="Blog">
+										<img class="img-responsive pb-md" src="/assets/img/demos/construction/blog/blog-construction-1.jpg" alt="Blog">
 									</a>
 									<article class="post">
 										<div class="date">
@@ -358,7 +358,7 @@
 							<div class="col-md-4">
 								<div class="recent-posts mt-xl">
 									<a href="demo-construction-blog-detail.html">
-										<img class="img-responsive pb-md" src="img/demos/construction/blog/blog-construction-2.jpg" alt="Blog">
+										<img class="img-responsive pb-md" src="/assets/img/demos/construction/blog/blog-construction-2.jpg" alt="Blog">
 									</a>
 									<article class="post">
 										<div class="date">
@@ -375,7 +375,7 @@
 							<div class="col-md-4">
 								<div class="recent-posts mt-xl">
 									<a href="demo-construction-blog-detail.html">
-										<img class="img-responsive pb-md" src="img/demos/construction/blog/blog-construction-3.jpg" alt="Blog">
+										<img class="img-responsive pb-md" src="/assets/img/demos/construction/blog/blog-construction-3.jpg" alt="Blog">
 									</a>
 									<article class="post">
 										<div class="date">
@@ -399,7 +399,7 @@
 					<div class="row">
 						<div class="col-md-3">
 							<a href="index.html">
-								<img alt="Porto" class="img-responsive logo" width="110" src="img/demos/construction/logo-construction-small.png">
+								<img alt="Porto" class="img-responsive logo" width="110" src="/assets/img/demos/construction/logo-construction-small.png">
 							</a>
 						</div>
 						<div class="col-md-4">
@@ -490,40 +490,40 @@
 		</div>
 
 		<!-- Vendor -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
-		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-		<script src="vendor/jquery-cookie/jquery-cookie.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="vendor/common/common.min.js"></script>
-		<script src="vendor/jquery.validation/jquery.validation.min.js"></script>
-		<script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-		<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
-		<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
-		<script src="vendor/isotope/jquery.isotope.min.js"></script>
-		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script src="vendor/vide/vide.min.js"></script>
+		<script src="/assets/vendor/jquery/jquery.min.js"></script>
+		<script src="/assets/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="/assets/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/assets/vendor/common/common.min.js"></script>
+		<script src="/assets/vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="/assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="/assets/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="/assets/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="/assets/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="/assets/vendor/vide/vide.min.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
-		<script src="js/theme.js"></script>
+		<script src="/assets/js/theme.js"></script>
 		
 		<!-- Current Page Vendor and Views -->
-		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="/assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="/assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
 		<!-- Current Page Vendor and Views -->
-		<script src="vendor/nivo-slider/jquery.nivo.slider.min.js"></script>
-		<script src="js/views/view.contact.js"></script>
+		<script src="/assets/vendor/nivo-slider/jquery.nivo.slider.min.js"></script>
+		<script src="/assets/js/views/view.contact.js"></script>
 
 		<!-- Demo -->
-		<script src="js/demos/demo-construction.js"></script>	
+		<script src="/assets/js/demos/demo-construction.js"></script>	
 		
 		<!-- Theme Custom -->
-		<script src="js/custom.js"></script>
+		<script src="/assets/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
-		<script src="js/theme.init.js"></script>
+		<script src="/assets/js/theme.init.js"></script>
 
 
 
