@@ -18,9 +18,9 @@ Route::group(['middleware' => ['web']], function () {
     
     
     
-    Route::get('/', function () {
-    return view('index');
-});
+//    Route::get('/', function () {
+//    return view('index');
+//});
 
 Route::get('/admin', function () {
     return view('adminLayout');
@@ -57,6 +57,17 @@ Route::post('/admin/contactInfo/add', 'ContactInfoController@create');
 Route::post('/admin/contactInfo/store', 'ContactInfoController@store');
 Route::get('/admin/contactInfo/edit', 'ContactInfoController@edit');
 Route::post('/admin/contactInfo/update', 'ContactInfoController@update');
+
+
+/********* normal user routes **************************/
+
+Route::get('/', 'PostController@indexBlog');
+
+Route::get('/post/blogSingle/{id}', 'PostController@blogSingle');
+
+
+
+
 
 
 });

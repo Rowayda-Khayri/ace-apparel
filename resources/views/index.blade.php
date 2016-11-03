@@ -196,11 +196,57 @@
 				</section>
 
 				
-                            
-                            
-                            @yield('blog')
+    <!----------blog section-------------------------------------------------------------------------->
 
-				
+                            
+                            
+                            
+                            <section class="pt-md section-custom-construction-2">
+        <div class="container">
+
+                <div class="row">
+                        <div class="col-md-12 center mt-xl">
+                                <hr class="solid mt-none mb-xl">
+                        </div>
+                </div>
+                <div class="row pt-xl">
+                        <div class="col-md-12">
+                                <h2 class="mb-none text-color-dark">Blog</h2>
+                                <p class="lead mb-sm">Latest 3 posts in blog :</p>
+                        </div>
+                </div>
+                <div class="row">
+
+<!------------------------------------the latest 3 posts---------------------------------------->
+
+                        <div class="col-md-4">
+                                <div class="recent-posts mt-xl">
+                                        <a href="/post/blogSingle/{{$lastPost->id}}">
+                                                <img class="img-responsive pb-md" src="img/demos/construction/blog/blog-construction-3.jpg" alt="Blog">
+                                        </a>
+                                        <article class="post">
+                                                <div class="date">
+                                                        <span class="day">{{$lastPost->created_at->day}}</span>
+                                                        <span class="month">{{ date('M', strtotime($lastPost->created_at)) }}</span>
+                                                </div>
+                                                <h4 class="pt-md pb-none mb-none"><a class="text-color-dark" href="/post/blogSingle/{{$lastPost->id}}">{{$lastPost->title}}</a></h4>
+                                                <p>By {{$lastPost->author}}</p>
+                                                <p>{{$lastPost->body}}</p>
+                                                <a class="mt-md" href="/post/blogSingle/{{$lastPost->id}}">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        </article>
+                                </div>
+                        </div>
+
+    <!--------------- /the latest 3 posts---------------------------------------->
+
+
+
+                </div>
+        </div>
+</section>
+
+                            
+    <!----------/blog section-------------------------------------------------------------------------->
 			</div>
 
 

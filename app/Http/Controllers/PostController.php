@@ -160,9 +160,19 @@ class PostController extends Controller
         
         $lastPost = Post::orderBy('created_at', 'desc')->first();
         
-        return view('index.blog', compact('contact','hours'));
+        return view('index', compact('lastPost'));
+//        return $lastPost;
         
     }
+    
+    
+    public function blogSingle()   // show single post page
+    {
+        
+        return "blogSingle";
+        
+    }
+    
     
 
     
