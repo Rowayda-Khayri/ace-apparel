@@ -8,7 +8,7 @@
 @section('adminPageContent')
 
 
-<h1> Add BContact Info </h1>
+<h1> Add Contact Info </h1>
 
 </br>
 
@@ -31,6 +31,16 @@
     
     <label> Email :</label>
     <input  type="text" name="email" value="" required>
+    
+    </br></br>
+    
+     <label> Facebook :</label>
+    <input  type="text" name="facebook" value="" required>
+    
+    </br></br>
+    
+     <label> Twitter :</label>
+    <input  type="text" name="twitter" value="" required>
     
     </br></br>
     

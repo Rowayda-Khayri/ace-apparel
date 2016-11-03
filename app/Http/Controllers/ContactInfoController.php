@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Contact_info;
+use App\Hour;
+
+use DateTime;
+use Carbon\Carbon;
+
+
 class ContactInfoController extends Controller
 {
     /**
@@ -40,7 +47,39 @@ class ContactInfoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        // delete old info
+        
+        $oldContact = Contact_info::orderBy('created_at', 'desc')->first();
+//        $oldContact= Contact_info::find($oldContact->id);
+        
+        $oldContact->deleted_at = new DateTime();
+        
+        $oldContact->save();
+        $oldContact->delete();
+        // delete old hours
+         
+         
+       // save  new contact info 
+
+        $contact = new Contact_info;
+        
+        $contact->address = $request->address;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->facebook = $request->facebook;
+        $contact->twitter = $request->twitter;
+        
+        $contact->save();
+        
+        // save new hours 
+        
+        $hours = new Hour;
+        $hours->content = $request->hours;
+        $hours->save();
+        
+//        return redirect('/admin/post/show');
+        return "contact stored";
     }
 
     /**
