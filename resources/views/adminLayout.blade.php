@@ -104,7 +104,7 @@
                 <ul class="nav navbar-nav">
                     
                     <li>
-                        <a href="" style="font-size: 17px;">Contact Info</a>
+                        <a href="/admin/contactInfo/show" style="font-size: 17px;">Contact Info</a>
                     </li>
                     <li>
                         <a href="" style="font-size: 17px;">Slider</a>
