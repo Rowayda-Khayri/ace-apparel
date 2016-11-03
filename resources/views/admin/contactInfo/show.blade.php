@@ -21,6 +21,11 @@
     
     </br> </br>
     
+    @if($contact)
+    
+    <a style="margin-left: 100px;" href="/admin/contactInfo/edit/{{$contact->id}}">Edit Contact Info</a>
+    
+    </br>    </br>
     
     <label> Address :</label>
     <label> {{$contact->address}} </label>
@@ -56,7 +61,7 @@
 
     </br></br>
     
-    
+    @endif
     
   
     
