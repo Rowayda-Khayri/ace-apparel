@@ -1,6 +1,7 @@
 # ace-apparel
-Laravel Project
+Laravel Project 
 
+( Blog section in a website )
 
 
 '/' routes to client view
